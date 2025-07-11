@@ -20,7 +20,7 @@ export default function HeroSection() {
           playsInline
           poster="/placeholder.svg?height=1080&width=1920"
         >
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src="/slm-hero.mp4" type="video/mp4" />
         </video>
         {/* Video Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
@@ -48,12 +48,13 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
+        <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in-up">
           Royalhouse Chapel SLM
-          <span className="block text-3xl font-semibold text-yellow-400 mt-2 md:text-2xl">Touching Our Generation With The Power Of God</span>
         </h1>
-
         
+        <p className="text-2xl md:text-3xl font-semibold text-yellow-400 mb-12 animate-fade-in-up animation-delay-300">
+          Touching Our Generation With The Power Of God
+        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
           <Button

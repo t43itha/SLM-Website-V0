@@ -407,24 +407,6 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              {/* Newsletter Signup */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-2">
-                    <Users className="h-5 w-5 text-green-600" />
-                    <span>Newsletter</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm mb-4">Subscribe for weekly updates and prayer requests</p>
-                  <div className="space-y-3">
-                    <Input placeholder="Enter your email" type="email" />
-                    <Button size="sm" className="w-full bg-green-600 hover:bg-green-700 text-white">
-                      Subscribe
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
