@@ -17,7 +17,7 @@ export default function Footer() {
                 <Heart className="h-6 w-6 text-blue-900" />
               </div>
               <div>
-                <div className="font-bold text-lg">Royal House Chapel</div>
+                <div className="font-bold text-lg">Royalhouse Chapel</div>
                 <div className="text-sm text-blue-200">SLM</div>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function Footer() {
       <div className="border-t border-blue-800">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-blue-200 text-sm">© 2025 Royal House Chapel SLM. All rights reserved.</p>
+            <p className="text-blue-200 text-sm">© 2025 Royalhouse Chapel SLM. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-blue-200 hover:text-white text-sm transition-colors">
                 Privacy Policy

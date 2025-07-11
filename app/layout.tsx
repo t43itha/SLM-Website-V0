@@ -8,10 +8,10 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Royal House Chapel SLM - Welcome Home",
+  title: "Royalhouse Chapel SLM - Welcome Home",
   description:
     "Touching Our Generation With The Power Of God. Join us for worship, fellowship, and spiritual growth in South London.",
-  keywords: "church, worship, South London, Dulwich, Pentecostal, Royal House Chapel, SLM",
+  keywords: "church, worship, South London, Dulwich, Pentecostal, Royalhouse Chapel, SLM",
     generator: 'v0.dev'
 }
 

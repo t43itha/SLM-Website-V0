@@ -31,7 +31,7 @@ export default function Navigation({ showStamp = false }: NavigationProps) {
               <Heart className="h-6 w-6 text-white" />
             </div>
             <div>
-              <div className="font-bold text-white">Royal House Chapel</div>
+              <div className="font-bold text-white">Royalhouse Chapel</div>
               <div className="text-xs text-white/80">SLM</div>
             </div>
           </Link>
@@ -57,7 +57,9 @@ export default function Navigation({ showStamp = false }: NavigationProps) {
             >
               Join Us Sunday
             </Button>
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">Give</Button>
+            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold" asChild>
+              <Link href="/give">Give</Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,7 +89,9 @@ export default function Navigation({ showStamp = false }: NavigationProps) {
                 >
                   Join Us Sunday
                 </Button>
-                <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">Give</Button>
+                <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold" asChild>
+                  <Link href="/give">Give</Link>
+                </Button>
               </div>
             </div>
           </div>

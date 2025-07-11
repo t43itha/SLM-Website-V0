@@ -33,7 +33,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">Our Story, Your Future</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Discover the heart behind Royal House Chapel and the vision that drives us forward
+            Discover the heart behind Royalhouse Chapel and the vision that drives us forward
           </p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-blue-900 mb-8">Why We Exist</h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Royal House Chapel exists to touch our generation with the power of God. We are a vibrant Pentecostal
+              Royalhouse Chapel exists to touch our generation with the power of God. We are a vibrant Pentecostal
               church committed to creating an environment where people can encounter God's presence, discover their
               purpose, and develop into mature disciples of Jesus Christ.
             </p>

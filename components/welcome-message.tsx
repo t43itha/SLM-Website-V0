@@ -10,7 +10,7 @@ export default function WelcomeMessage() {
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-blue-900 leading-tight">A Place to Call Home</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              At Royal House Chapel, we believe everyone has a purpose and a place in God's family. Whether you're
+              At Royalhouse Chapel, we believe everyone has a purpose and a place in God's family. Whether you're
               taking your first steps of faith or have been walking with God for years, you'll find a warm, welcoming
               community ready to journey alongside you.
             </p>

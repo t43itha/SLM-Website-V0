@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js 15 church website for Royal House Chapel SLM (South London Mission), built with React 19, TypeScript, and Tailwind CSS. The site uses shadcn/ui components and follows the App Router pattern.
+This is a Next.js 15 church website for Royalhouse Chapel SLM (South London Mission), built with React 19, TypeScript, and Tailwind CSS. The site uses shadcn/ui components and follows the App Router pattern.
 
 ## Development Commands
 
