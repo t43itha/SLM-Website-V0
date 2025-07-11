@@ -5,7 +5,11 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Heart } from "lucide-react"
 
-export default function Navigation() {
+interface NavigationProps {
+  showStamp?: boolean
+}
+
+export default function Navigation({ showStamp = false }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
@@ -49,7 +53,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-3">
             <Button
               variant="outline"
-              className="border-white text-black hover:bg-transparent hover:text-white bg-white"
+              className="border-white text-white hover:bg-white hover:text-black bg-transparent"
             >
               Join Us Sunday
             </Button>
@@ -79,7 +83,7 @@ export default function Navigation() {
               <div className="flex flex-col space-y-2 pt-4 border-t border-white/20">
                 <Button
                   variant="outline"
-                  className="border-white text-black hover:bg-transparent hover:text-white bg-white"
+                  className="border-white text-white hover:bg-white hover:text-black bg-transparent"
                 >
                   Join Us Sunday
                 </Button>
@@ -91,13 +95,15 @@ export default function Navigation() {
       </div>
       
       {/* Stamp Below Header */}
-      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 z-40">
-        <div className="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-full px-6 py-2 shadow-lg">
-          <p className="text-white text-sm font-medium whitespace-nowrap">
-            Touching Our Generation With The Power Of God
-          </p>
+      {showStamp && (
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 z-40">
+          <div className="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-full px-6 py-2 shadow-lg">
+            <p className="text-white text-sm font-medium whitespace-nowrap">
+              Touching Our Generation With The Power Of God
+            </p>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   )
 }
