@@ -18,7 +18,7 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200/50 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/20 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -27,8 +27,8 @@ export default function Navigation() {
               <Heart className="h-6 w-6 text-white" />
             </div>
             <div>
-              <div className="font-bold text-blue-900">Royal House Chapel</div>
-              <div className="text-xs text-gray-600">SLM</div>
+              <div className="font-bold text-white">Royal House Chapel</div>
+              <div className="text-xs text-white/80">SLM</div>
             </div>
           </Link>
 
@@ -38,7 +38,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                className="text-white hover:text-yellow-400 font-medium transition-colors duration-200"
               >
                 {item.label}
               </Link>
@@ -49,7 +49,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-3">
             <Button
               variant="outline"
-              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
+              className="border-white text-black hover:bg-transparent hover:text-white bg-white"
             >
               Join Us Sunday
             </Button>
@@ -57,29 +57,29 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <Button variant="ghost" size="icon" className="md:hidden text-white hover:text-yellow-400" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div className="md:hidden py-4 border-t border-white/20">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 font-medium py-2"
+                  className="text-white hover:text-yellow-400 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-              <div className="flex flex-col space-y-2 pt-4 border-t border-gray-200">
+              <div className="flex flex-col space-y-2 pt-4 border-t border-white/20">
                 <Button
                   variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
+                  className="border-white text-black hover:bg-transparent hover:text-white bg-white"
                 >
                   Join Us Sunday
                 </Button>
@@ -88,6 +88,15 @@ export default function Navigation() {
             </div>
           </div>
         )}
+      </div>
+      
+      {/* Stamp Below Header */}
+      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 z-40">
+        <div className="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-full px-6 py-2 shadow-lg">
+          <p className="text-white text-sm font-medium whitespace-nowrap">
+            Touching Our Generation With The Power Of God
+          </p>
+        </div>
       </div>
     </nav>
   )

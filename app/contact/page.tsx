@@ -337,24 +337,41 @@ export default function ContactPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <MapPin className="h-12 w-12 mx-auto mb-2" />
-                      <p className="text-sm">Interactive Map</p>
-                      <p className="text-xs">Kingsdale Foundation School</p>
-                    </div>
+                  <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.2745449629804!2d-0.0844729845988965!3d51.43212347960687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760357c2e9f0d3%3A0x5f7b4f2a0e8c9d6a!2sKingsdale%20Foundation%20School%2C%20Alleyn%20Park%2C%20London%20SE21%208SQ%2C%20UK!5e0!3m2!1sen!2suk!4v1642680000000!5m2!1sen!2suk"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Kingsdale Foundation School Location - Alleyn Park, London SE21 8SQ"
+                    />
                   </div>
                   <div className="space-y-2 text-sm">
                     <p className="font-semibold">Kingsdale Foundation School</p>
-                    <p className="text-gray-600">Dulwich, SE21 8SB, London, UK</p>
+                    <p className="text-gray-600">Alleyn Park, London SE21 8SQ, UK</p>
                     <div className="flex flex-col gap-2 mt-4">
-                      <Button variant="outline" size="sm" className="bg-transparent">
-                        <MapPin className="h-4 w-4 mr-2" />
-                        Get Directions
+                      <Button variant="outline" size="sm" className="bg-transparent" asChild>
+                        <a 
+                          href="https://www.google.com/maps/dir/?api=1&destination=Kingsdale+Foundation+School,+Alleyn+Park,+London+SE21+8SQ,+UK"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <MapPin className="h-4 w-4 mr-2" />
+                          Get Directions
+                        </a>
                       </Button>
-                      <Button variant="outline" size="sm" className="bg-transparent">
-                        <Calendar className="h-4 w-4 mr-2" />
-                        View Parking Info
+                      <Button variant="outline" size="sm" className="bg-transparent" asChild>
+                        <a 
+                          href="https://www.google.com/maps/place/Kingsdale+Foundation+School/@51.4321235,-0.0844729,17z"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Calendar className="h-4 w-4 mr-2" />
+                          View on Map
+                        </a>
                       </Button>
                     </div>
                   </div>

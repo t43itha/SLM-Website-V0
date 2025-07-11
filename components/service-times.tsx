@@ -29,7 +29,7 @@ export default function ServiceTimes() {
   }, [])
 
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-50 to-white relative">
+    <section id="when-we-gather" className="py-16 bg-gradient-to-b from-blue-50 to-white relative">
       <div className="container mx-auto px-4">
         {/* Floating Service Times Card */}
         <Card className="max-w-4xl mx-auto -mt-32 relative z-20 bg-white/95 backdrop-blur-lg border border-white/20 shadow-2xl">
