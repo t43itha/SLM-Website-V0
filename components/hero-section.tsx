@@ -36,13 +36,13 @@ export default function HeroSection() {
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in-up animation-delay-200 leading-tight">
-          Royal House
+          Royalhouse
           <span className="block text-5xl md:text-7xl text-yellow-400 mt-2">
             Chapel
           </span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-4 animate-fade-in-up animation-delay-400 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-yellow-400 font-semibold mb-4 animate-fade-in-up animation-delay-400 max-w-3xl mx-auto leading-relaxed">
           South London Mission
         </p>
         
